@@ -1,14 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import  { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Counter from './routes/counter';
+import RoundTripCounter from './routes/roundTripCounter';
+import CoolLib from './routes/coolLib';
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+  );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="counter" element={<Counter />} />
+      <Route path="rtcounter" element={<RoundTripCounter />} />
+      <Route path="coollib" element={<CoolLib />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
