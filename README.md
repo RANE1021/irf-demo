@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Set Up Steps
+- make sure you have node [installed](https://nodejs.org/en/download/).
+- go to desired directory in terminal (or git bash, iterm, etc) and run the cmd "git clone https://github.com/RANE1021/irf-demo.git"
+- cd into irf-demo directory and run cmd "npm install"
+- run cmd npm start and navigate to http://localhost:3000/ on browser
+
 ## Available Scripts
 
 In the project directory, you can run:
